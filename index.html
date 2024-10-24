@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Company Page</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .slide {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .fade {
+            animation: fade 1s ease-in-out;
+        }
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class=" bg-gray-200">
+    <div class="mb-4">
+        <header class="bg-white text-blue-900 flex items-center justify-between h-16 p-4 rounded-lg shadow-md">
+            <img src="img/logo.png" class="w-48 h-full" alt="logo">
+            <nav class="flex space-x-4">
+                <a href="index.html" class="font-bold hover:underline">Home</a>
+                <a href="about.html" class="font-bold hover:underline">About Us</a>
+                <a href="gallery.html" class="font-bold hover:underline">Gallery</a>
+            </nav>
+        </header>
+    </div>
+   
+    <div class="max-w-10xl mx-auto">
+        <div class="relative">
+            <div class="slide active -mt-[20px]">
+                <div class="relative w-full h-[500px] rounded-br-full overflow-hidden">
+                    <img src="img/PCI.jpg" alt="Image 1" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-blue-900 opacity-70">
+                        <div class="text-center mt-[140px]">
+                            <h1 class="text-4xl font-bold text-white">OUR CORE VALUES</h1>
+                            <p class="text-white text-base text-2xl mt-2">SLE Ltd pledges that all organizational and decision.All</p>
+                            <p class="text-white text-base text-2xl mt-1">organizational decisions will be based on these core values.</p>
+                            <p class="text-white text-base text-2xl mt-1">A.-making will be based on and guided by the following values</p>
+                            <p class="text-white text-base text-2xl mt-1">SLE Ltd is committed to upholding these values in every decision.</p>
+                        </div>
+                        
+                    </div> <!-- Light black overlay -->
+                </div>
+                
+            </div>
+          
+            <div class="slide">
+                <img src="img/bady.jpg" alt="Image 2" class="w-full h-[500px] object-cover rounded-br-full">
+                <div class="absolute inset-0 bg-blue-900 opacity-70 rounded-br-full">
+                    <div class="text-center mt-[140px]">
+                        <h1 class="text-4xl font-bold text-white">OUR CORE VALUES</h1>
+                        <p class="text-white text-base text-2xl mt-2">SLE Ltd pledges that all organizational and decision.All</p>
+                        <p class="text-white text-base text-2xl mt-1">organizational decisions will be based on these core values.</p>
+                        <p class="text-white text-base text-2xl mt-1">A.-making will be based on and guided by the following values</p>
+                        <p class="text-white text-base text-2xl mt-1">SLE Ltd is committed to upholding these values in every decision.</p>
+                    </div>
+                    
+                </div> <!-- Light black overlay -->
+            </div>
+            <div class="slide">
+                <img src="img/book.jpg" alt="Image 3" class="w-full h-[500px] object-cover rounded-br-full">
+                <div class="absolute inset-0 bg-blue-900 opacity-70 rounded-br-full">
+                    <div class="text-center mt-[140px]">
+                        <h1 class="text-4xl font-bold text-white">OUR CORE VALUES</h1>
+                        <p class="text-white text-base text-2xl mt-2">SLE Ltd pledges that all organizational and decision.All</p>
+                        <p class="text-white text-base text-2xl mt-1">organizational decisions will be based on these core values.</p>
+                        <p class="text-white text-base text-2xl mt-1">A.-making will be based on and guided by the following values</p>
+                        <p class="text-white text-base text-2xl mt-1">SLE Ltd is committed to upholding these values in every decision.</p>
+                    </div>
+                    
+                </div> <!-- Light black overlay -->
+            </div>
+            <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">❮</button>
+            <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">❯</button>
+        </div>
+    </div>
+    
+    <div class="h-auto mt-10 mt-[100px]">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class="flex flex-col items-center mx-4 mb-6 bg-blue-900 rounded-br-2xl rounded-tl-2xl p-4 text-center">
+                <h1 class="text-2xl text-white">COMPANY EXPERIENCE</h1>
+                <p class="text-white text-base">2017-2018 Engineering design of transmission line.</p>
+                <img src="img/kk.jpeg" class="w-[350px] h-[140px] object-cover mt-4" alt="images">
+                <h2 class="text-white font-bold text-lg mt-2">We are here for you</h2>
+            </div>
+
+            <div class="flex-1 h-auto mx-4 mb-6">
+                <h1 class="text-red-600 font-bold text-2xl text-center mt-10 mb-4">Know What We Do</h1>
+                <div class="max-w-2xl bg-white rounded-lg shadow-lg p-6 mx-auto">
+                    <h1 class="text-2xl font-bold mb-4">Lorem Ipsum</h1>
+                    <p class="text-gray-700 text-base mb-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p class="text-gray-700 text-base mb-4">Various versions have evolved over the years, sometimes by accident, sometimes on purpose.</p>
+                    <p class="text-gray-700 text-base">2020 - 2021 Installation of electromechanical electrical power supply for new office.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center mx-4 mb-6 bg-blue-900 rounded-br-2xl rounded-tl-2xl p-4 text-center">
+                <h1 class="text-2xl text-white">COMPANY EXPERIENCE</h1>
+                <p class="text-white text-base">2017-2018 Engineering design of transmission line.</p>
+                <img src="img/kk.jpeg" class="w-[350px] h-[140px] object-cover mt-4" alt="images">
+                <h2 class="text-white font-bold text-lg mt-2">We are here for you</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-auto mt-[10px]">
+        <h1 class="text-red-600 font-bold text-2xl md:text-4xl mt-10 mb-4 text-center">Our Partners</h1>
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class="flex flex-col items-center mx-4 mb-6 bg-white h-[300px] shadow-xl rounded-2xl">
+                <img src="img/lo.png" class="w-[300px] h-[150px] object-cover rounded-2xl" alt="lo">
+                <h2 class="text-red-600 font-bold text-lg mt-2">Slogan Goes Here</h2>
+                <p class="text-gray-900 text-base font-bold">2017  design of transmission line.</p>
+                <p class="text-gray-900 text-base font-bold">chitectural engineering installtion</p>
+                <p class="text-gray-900 text-base font-bold">activities and related engineering.</p>
+            </div>
+            <div class="flex flex-col items-center mx-4 mb-6 bg-white h-[300px] shadow-xl rounded-2xl">
+                <img src="img/u.png" class="w-[300px] h-[140px] object-cover rounded-2xl" alt="u">
+                <h2 class="text-red-600 font-bold text-lg mt-2">Slogan Goes Here</h2>
+                <p class="text-gray-900 text-base font-bold">2017  design of transmission line.</p>
+                <p class="text-gray-900 text-base font-bold">chitectural engineering installtion</p>
+                <p class="text-gray-900 text-base font-bold">activities and related engineering.</p>
+            </div>
+            <div class="flex flex-col items-center mx-4 mb-6 bg-white h-[300px] shadow-xl rounded-2xl">
+                <img src="img/images.jpeg" class="w-[300px] h-[140px] object-cove rounded-2xl" alt="images">
+                <h2 class="text-red-600 font-bold text-lg mt-2">Slogan Goes Here</h2>
+                <p class="text-gray-900 text-base font-bold">2017  design of transmission line.</p>
+                <p class="text-gray-900 text-base font-bold">chitectural engineering installtion</p>
+                <p class="text-gray-900 text-base font-bold">activities and related engineering.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-blue-900 h-[80px] text-white flex flex-col items-center justify-center mt-5">
+        <div class="uppercase p-4 text-center">
+            <h1 class="text-sm md:text-lg mb-1">Design & Construction</h1>
+            <h1 class="text-sm md:text-base">Sledesign@gmail.com</h1>
+        </div>
+    </footer>
+
+    
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active', 'fade');
+                if (i === index) {
+                    slide.classList.add('active', 'fade');
+                }
+            });
+        }
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        });
+
+        // Auto-slide functionality
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }, 5000); // Change slide every 5 seconds
+    </script>
+</body>
+</html>

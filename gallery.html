@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        .active {
+            display: block;
+        }
+        .fade {
+            animation: fade 1s;
+        }
+        @keyframes fade {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<div class="mb-4">
+    <header class="bg-white text-blue-900 flex items-center justify-between h-16 p-4 rounded-lg shadow-md">
+        <img src="img/logo.png" class="w-48 h-full" alt="logo">
+        <nav class="flex space-x-4">
+            <a href="index.html" class="font-bold hover:underline">Home</a>
+            <a href="about.html" class="font-bold hover:underline">About Us</a>
+            <a href="gallery.html" class="font-bold hover:underline">Gallery</a>
+        </nav>
+    </header>
+</div>
+<body class="bg-gray-100">
+<div class="w-full h-[500px]">
+  
+    <div class="">
+        <img src="img/kk.jpeg" class="slides fade h-[500px] " alt="Image 1">
+        <img src="img/PCI.jpg" class="slides fade h-[500px]" alt="Image 2">
+        <img src="img/we.jpeg" class="slides fade h-[500px]" alt="Image 3">
+    </div>
+</div>
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].classList.add("active");
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        showSlides(); // Start the slideshow
+    </script>
+
+<div class="h-[100px] mt-[50px] ml-[300px] font-bold text-4xl">
+    <h1 class="text-blue-900">Design & Construction staff Gallery</h1>
+</div>
+
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h1 class="text-red-600 font-bold text-2xl md:text-4xl text-center">Broad</h1>
+               
+                <img src="img/PCI.jpg" alt="Image 1" class="w-full h-[500px] object-cover mt-4">
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h1 class="text-red-600 font-bold text-2xl md:text-4xl text-center">Engineering</h1>
+               
+                <img src="img/PCI.jpg" alt="Image 1" class="w-full h-[500px] object-cover mt-4">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h1 class="text-red-600 font-bold text-2xl md:text-4xl text-center">Management</h1>
+                
+                <img src="img/PCI.jpg" alt="Image 1" class="w-full h-[500px] object-cover mt-4">
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h1 class="text-red-600 font-bold text-2xl md:text-4xl text-center">other employe</h1>
+                
+                <img src="img/PCI.jpg" alt="Image 1" class="w-full h-[500px] object-cover mt-4">
+            </div>
+        </div>
+        <div class="rounded-2xl shadow-lg p-6 h-[800px] mt-[30px]">
+            <h1 class="text-red-600 font-bold text-2xl md:text-4xl text-center">Campany Staff</h1>
+            
+            <img src="img/PCI.jpg" alt="Image 1" class="w-[300px] h-[500px] object-cover mt-[30px] ml-[200px] rounded-2xl">
+        </div>
+        <div class="ml-[150px]">
+            <img src="img/PCI.jpg" alt="Image 1" class="w-[300px] h-[500px] object-cover -mt-[700px] ml-[800px] rounded-2xl">
+        </div>
+       <div>
+        <img src="img/PCI.jpg" alt="Image 1" class="w-[350px] ml-[550px] -mt-[500px] rounded-2xl">
+       </div>
+       <div>
+        <img src="img/PCI.jpg" alt="Image 1" class="w-[350px] ml-[550px] mt-[20px] rounded-2xl">
+       </div>
+    </div>
+     
+    </div>
+    <footer class="bg-blue-900 h-[80px] text-white flex flex-col items-center justify-center mt-[200px]">
+        <div class="uppercase p-4 text-center">
+            <h1 class="text-sm md:text-lg mb-1">Design & Construction</h1>
+            <h1 class="text-sm md:text-base">Sledesign@gmail.com</h1>
+        </div>
+    </footer>
+</body>
+</html>
